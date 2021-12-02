@@ -11,6 +11,7 @@ def nav(f):
             depth -= int(rule[-1])
     return depth * hor
 
+# now use aim and recalculate
 def nav_aim(f):
     aim = depth = hor = 0
     for rule in f:
