@@ -1,0 +1,2 @@
+f=[int(item.strip()) for item in open('day1.txt','r').readlines()]
+print(sum(int(f[i]) > int(f[i-1]) for i in range(1,len(f))),sum(int(f[i]+f[i+1]+f[i+2])<int(f[i+1]+f[i+2]+f[i+3]) for i in range(len(f)-3)))
