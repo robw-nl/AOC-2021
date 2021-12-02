@@ -1,7 +1,6 @@
 # Multiply final horizontal position by your final depth by following course forward, down, up
-# Assuming all numbers 0-9
 def nav(f):
-    depth = hor = 0
+    depth = hor = 0 # Assuming all numbers 0-9
     for rule in f:
         if rule[0] == "f":
             hor += int(rule[-1])
