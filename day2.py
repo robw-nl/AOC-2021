@@ -6,7 +6,7 @@ def nav(f):
             hor += int(rule[-1])
         elif rule[0] == "d":
             depth += int(rule[-1])
-        elif rule[0] == "u":
+        else:
             depth -= int(rule[-1])
     return depth * hor
 
@@ -19,13 +19,13 @@ def nav_aim(f):
             depth += aim * int(rule[-1])
         elif rule[0] == "d":
             aim += int(rule[-1])
-        elif rule[0] == "u":
+        else:
             aim -= int(rule[-1])
     return depth * hor
 
 def main(f):
     f = open(f, "r").read().split("\n")
-    print(nav(f), nav_aim(f), nav_both(f))
+    print(nav(f), nav_aim(f))
     
 if __name__ == "__main__":   
     main("day2.txt")
