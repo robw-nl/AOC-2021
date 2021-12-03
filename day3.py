@@ -1,7 +1,7 @@
 # p1: Use the binary numbers in the report to calculate gamma and epsilon rate, then multiply them together
 # p2 Use the binary numbers in the report to calculate oxygen generator and CO2 scrubber rating by multiplying them
 
-def solver(f):
+def p1p2(f):
     x = 0
 
     binary = ''
@@ -40,7 +40,7 @@ def solver(f):
     
 def main(f):
     f = [item.strip() for item in open(f, 'r').readlines()]
-    print(solver(f))
+    print(p1p2(f))
 
 if __name__ == '__main__':   
     main('day3.txt')
